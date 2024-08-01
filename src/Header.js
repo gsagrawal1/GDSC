@@ -1,8 +1,9 @@
 import React from 'react'
-import  { useRef, useState, useEffect,useNavigate } from 'react';
-import { Link } from 'react-router-dom';
+import  { useRef, useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import DataContext from './Context/DataContext';
+
 const Header = () => {
   const {width} = useContext(DataContext)
   const { list, setList } = useContext(DataContext)
