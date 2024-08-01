@@ -25,7 +25,7 @@ function App() {
       <Navbar />
       <Routes basename={process.env.PUBLIC_URL}>
       <Route exact path="/" Component={Home}></Route>
-      <Route path="/apply" Component={Apply}></Route>
+      <Route path="/apply" element={<Apply />}></Route>
        </Routes>
        <OurInfo />
       <Footer />
