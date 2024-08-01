@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import OurInfo from './OurInfo';
 import Footer from './Footer';
 import LastFooter from './LastFooter';
-import Apply from './Apply';
+import Apply  from './Apply'; 
 import { useLocation, useNavigate } from 'react-router-dom';
 
 function App() {
