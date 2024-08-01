@@ -1,12 +1,10 @@
 import React from 'react'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa6'
-import useAxiosFetch from './hooks/useAxiosFetch'
 import { useState, useEffect, useRef, useContext } from 'react'
 import DataContext from './Context/DataContext';
 
 const FaQContact = () => {
     const {width} = useContext(DataContext)
-    const {data} = useAxiosFetch('http://localhost:3500/faqs');
     const [faqItems, setFaqItems] = useState(
         [
             {     

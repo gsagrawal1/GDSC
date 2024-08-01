@@ -22,7 +22,7 @@ function App() {
   }, [pathname]);
 
   return (
-    <HashRouter>
+    
       <DataProvider>
         <Navbar />
         <Routes>
@@ -33,7 +33,7 @@ function App() {
         <Footer />
         <LastFooter />
       </DataProvider>
-    </HashRouter>
+   
   );
 }
 
