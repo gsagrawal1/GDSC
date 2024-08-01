@@ -24,7 +24,7 @@ function App() {
       <DataProvider>
       <Navbar />
       <Routes basename={process.env.PUBLIC_URL}>
-      <Route path="/" Component={Home}></Route>
+      <Route exact path="/" Component={Home}></Route>
       <Route path="/apply" Component={Apply}></Route>
        </Routes>
        <OurInfo />
