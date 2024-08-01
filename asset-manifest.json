@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/GDSC/static/css/main.b3f75801.css",
-    "main.js": "/GDSC/static/js/main.01831e6d.js",
+    "main.css": "/GDSC/static/css/main.d0980284.css",
+    "main.js": "/GDSC/static/js/main.c54e3562.js",
     "static/media/Untitled design.png": "/GDSC/static/media/Untitled design.d996520ea205d199f164.png",
+    "static/media/wp11657064.jpg": "/GDSC/static/media/wp11657064.4aab3601138891962844.jpg",
+    "static/media/wp9109396.jpg": "/GDSC/static/media/wp9109396.d9578c9980ceb9ad8e5c.jpg",
     "static/media/wp9109383-programmer-4k-wallpapers.jpg": "/GDSC/static/media/wp9109383-programmer-4k-wallpapers.ebc436b6e68ba085dd44.jpg",
+    "static/media/Lovepik_com-401639229-happy-overtime-programmer.png": "/GDSC/static/media/Lovepik_com-401639229-happy-overtime-programmer.b194d046168d93b3d13f.png",
+    "static/media/green-speech-bubble-icon-isolated_53876-71269 Background Removed.png": "/GDSC/static/media/green-speech-bubble-icon-isolated_53876-71269 Background Removed.c78266f7517be9f256b4.png",
+    "static/media/wp8587805-minimal-code-wallpapers.png": "/GDSC/static/media/wp8587805-minimal-code-wallpapers.8cdb6f18613872431673.png",
     "static/media/wp12835634-coder-4k-wallpapers.png": "/GDSC/static/media/wp12835634-coder-4k-wallpapers.3617c620b0e8f8d670f3.png",
     "index.html": "/GDSC/index.html",
-    "main.b3f75801.css.map": "/GDSC/static/css/main.b3f75801.css.map",
-    "main.01831e6d.js.map": "/GDSC/static/js/main.01831e6d.js.map"
+    "main.d0980284.css.map": "/GDSC/static/css/main.d0980284.css.map",
+    "main.c54e3562.js.map": "/GDSC/static/js/main.c54e3562.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3f75801.css",
-    "static/js/main.01831e6d.js"
+    "static/css/main.d0980284.css",
+    "static/js/main.c54e3562.js"
   ]
 }
