@@ -16,8 +16,8 @@ export const DataProvider = ({children}) => {
         return savedList ? JSON.parse(savedList) : [
           { id: 1, name: "Home", link: "/", isSelect: true },
           { id: 2, name: "Apply", link: "/apply", isSelect: false },
-          { id: 3, name: "Upcomings", link: "/upcomings", isSelect: false },
-          { id: 4, name: "Events", link: "/events", isSelect: false }
+          { id: 3, name: "Upcomings", link: "/", isSelect: false },
+          { id: 4, name: "Events", link: "/", isSelect: false }
         ];
       });
     
