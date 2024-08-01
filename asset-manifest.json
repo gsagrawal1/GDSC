@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gdsc/static/css/main.d3ec8571.css",
+    "main.js": "/gdsc/static/js/main.f9722e38.js",
+    "static/media/Untitled design.png": "/gdsc/static/media/Untitled design.d996520ea205d199f164.png",
+    "static/media/wp9109383-programmer-4k-wallpapers.jpg": "/gdsc/static/media/wp9109383-programmer-4k-wallpapers.ebc436b6e68ba085dd44.jpg",
+    "static/media/wp12835634-coder-4k-wallpapers.png": "/gdsc/static/media/wp12835634-coder-4k-wallpapers.3617c620b0e8f8d670f3.png",
+    "index.html": "/gdsc/index.html",
+    "main.d3ec8571.css.map": "/gdsc/static/css/main.d3ec8571.css.map",
+    "main.f9722e38.js.map": "/gdsc/static/js/main.f9722e38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3ec8571.css",
+    "static/js/main.f9722e38.js"
+  ]
+}
