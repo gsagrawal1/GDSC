@@ -14,7 +14,7 @@ function App() {
   const { pathname } = useLocation();
   useEffect(()=>{
     navigate('/');
-  },[])
+  },[navigate])
   useEffect(() => {
       window.scrollTo(0, 0);
   }, [pathname]);
