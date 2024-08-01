@@ -8,6 +8,7 @@ import LastFooter from "./LastFooter";
 import Apply from "./Apply";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
  
 function App() {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ function App() {
     <div className="App">
       <DataProvider>
       <Navbar />
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
       <Route path="/" Component={Home}></Route>
       <Route path="/apply" Component={Apply}></Route>
        </Routes>
