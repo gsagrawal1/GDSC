@@ -149,7 +149,7 @@ const Apply = () => {
            {count &&
            <button  className={width > 992 ? 'submitBtn backbtn w-full' : 'submitBtn backbtn w-small'} type='button' onClick={handlebtnclickBack}>Back</button>
            }
-           {(count == 2) ? 
+           {(count === 2) ? 
             (<button  className={width > 992 ? 'submitBtn nextbtn w-full' : 'submitBtn nextbtn w-small'} type='submit'> Submit</button>):
             (<button className={width > 992 ? 'submitBtn nextbtn w-full' : 'submitBtn nextbtn w-small'} type='button' onClick={handlebtnclickNext}> Next</button>)
         }
