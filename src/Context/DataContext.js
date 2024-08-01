@@ -11,38 +11,23 @@ export const DataProvider = ({children}) => {
     const {width} = useWindowSize() 
     const [leftNavClick, setLeftNavClick] = useState(false);
     const { pathname } = useLocation();
-    const [list, setList] = useState([
-      {     
-          "id" : 1,
-          "name" : "Home",
-          "link": "/",
-          "isSelect" : true
-        
-      },
-      {
-          "id" : 2,
-          "name" : "Apply",
-          "link": "/apply",
-          "isSelect" : false
-      },
-      {
-          "id" : 3,
-          "name" : "Upcomings",
-          "link": "/",
-          "isSelect" : false
-      },
-      {
-          "id" : 4,
-          "name" : "Events",
-          "link": "/",
-          "isSelect" : false
-      }
-  ]
-  );
-  const handleNavSelect = (id) =>{
-    const mapItems = list.map((item)=> (item.id) === id ? {...item, isSelect : true} : {...item, isSelect : false} ) 
-    setList(mapItems)
-  }
+    const [list, setList] = useState(() => {
+        const savedList = localStorage.getItem('navList');
+        return savedList ? JSON.parse(savedList) : [
+          { id: 1, name: "Home", link: "/", isSelect: true },
+          { id: 2, name: "Apply", link: "/apply", isSelect: false },
+          { id: 3, name: "Upcomings", link: "/upcomings", isSelect: false },
+          { id: 4, name: "Events", link: "/events", isSelect: false }
+        ];
+      });
+    
+      const handleNavSelect = (id) => {
+        const updatedList = list.map(item => 
+          item.id === id ? { ...item, isSelect: true } : { ...item, isSelect: false }
+        );
+        setList(updatedList);
+        localStorage.setItem('navList', JSON.stringify(updatedList));
+      };
   const handleleftnavClick = () => {
     setLeftNavClick(!leftNavClick);
   }

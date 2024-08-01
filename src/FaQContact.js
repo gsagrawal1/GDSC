@@ -16,34 +16,34 @@ const FaQContact = () => {
             },
             {     
                 "id" : 2,
-                "faqquest" : "How to Join Google Developer Student club?",
+                "faqquest" : "What types of events and activities does GDSC organize?",
                 "isSelect" : false,
                 "faqans" : "Answer to the question"
               
             },
             {     
                 "id" : 3,
-                "faqquest" : "How to Join Google Developer Student club?",
+                "faqquest" : "How often does GDSC hold meetings or events?",
                 "isSelect" : false,
                 "faqans" : "Answer to the question"
               
             },
             {     
                 "id" : 4,
-                "faqquest" : "How to Join Google Developer Student club?",
+                "faqquest" : "What are the benefits of joining GDSC?",
                 "isSelect" : false,
                 "faqans" : "Answer to the question"
             },
             {     
                 "id" : 5,
-                "faqquest" : "How to Join Google Developer Student club?",
+                "faqquest" : "Do I need to have prior experience to join GDSC?",
                 "isSelect" : false,
                 "faqans" : "Answer to the question"
               
             },
             {     
                 "id" : 6,
-                "faqquest" : "How to Join Google Developer Student club?",
+                "faqquest" : "What is the Google Developer Student Club (GDSC)?",
                 "isSelect" : false,
                 "faqans" : "Answer to the question"
               

@@ -9,24 +9,19 @@ const Navbar = () => {
 
   const logo1 = logo;
   const {list, setList, handleNavSelect, width, leftNavClick, handleleftnavClick } = useContext(DataContext)
-  const handleHomeClick = () =>{
-    const listItems = list.map(item => item.id === 1 ? {...item, isSelect : true} : {...item, isSelect : false})
-    setList(listItems)
-  }
- 
-  
+   
   return ( 
     <div 
      className={width > 992 ? 'Navbar w-full' : 'Navbar w-small'} 
     >
     <div className="marquee">
-        <marquee behavior="" direction="">☎️ ☎️ Hiring process is on going on our club. Take your chance and join with us.!!</marquee>
+        <marquee behavior="" direction="">☎️ ☎️ The hiring process for our club is currently underway. Seize the opportunity and join us!</marquee>
     </div>
     <div className={width > 992 ? 'navleft w-full' : 'navleft w-small'} >
        <div className="navitems">
        
        <span  className={width > 992 ? 'headlogo w-full' : 'headlogo w-small'}>
-       <Link to='/' onClick={handleHomeClick}>
+       <Link to='/' onClick={() => handleNavSelect(1)}>
        <img src={logo1} alt='GDSC Logo'></img>
        </Link>
        </span>

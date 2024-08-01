@@ -4,11 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 :root{
   --font1 : "IBM Plex Sans", sans-serif;
   --font2: "Hind", sans-serif;
   --font3: 'Poppins', sans-serif;
+  --bgc: #030315f7;
 }
 
 body {
@@ -48,7 +50,7 @@ body {
 }
 .Navbar.w-small{
   height: 80px;
-  padding: 5px 10px;
+  padding: 6px 10px;
 }
 .marquee{
   position: absolute;
@@ -63,6 +65,10 @@ body {
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
+}
+.Navbar.w-small .marquee{
+  font-size: 12px;
+
 }
 
 .navleft{
@@ -331,6 +337,22 @@ body {
   background: url('./media/images/Untitled design.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageNumSlide{
+  height: auto;
+  width: auto;
+  font-size: 50px;
+  font-family: var(--font3);
+  font-weight: 800;
+  font-style: normal;
+  color: wheat;
+  text-align: center;
+}
+.imageNumSlide.w-small{
+  font-size: 20px;
 }
 .scrlbtn{
   position: absolute;
@@ -1039,3 +1061,188 @@ ul{
   justify-content: center;
 
 }
+.Sponsors{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.sponsorshead{
+  height: auto;
+  width: auto;
+  padding: 18px 0;
+  font-size: 28px;
+  color: black;
+  font-family: var(--font3);
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.sponsorshead.w-small{
+  font-size: 22px;
+}
+.sponsorlist{
+  max-width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  margin: 30px 0;
+  overflow: hidden;
+}
+.sponsorlist .child{
+  margin: 0 50px;
+}
+.sponsorlist.w-small{
+  max-width: 40%;
+}
+.sponsorlist.w-small .child{
+  margin: 0;
+}
+.sponsorlist .child .sponsor{
+
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 110px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sponsorlist .child .sponsor.w-small{
+  width: 134px;
+  height: 80px;
+}
+.sponsorlist .child .sponsor svg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.Describe{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--bgc);
+  padding: 50px 20px;
+}
+.describeLeft{
+  height: auto;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.describeLeft.w-small{
+  width: 100%;
+}
+.describeLeft img{
+   height: 300px;
+   width: 350px;
+   animation: bounce 4s infinite;
+}
+.describeLeft.w-small img{
+  height: 230px;
+  width: 250px;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+.describeRight{
+ height: auto;
+ width: 60%;
+ display: flex;
+ flex-direction: column;
+}
+.describeRight.w-small{
+  width: 100%;
+}
+.describeRightLabel{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+  font-size: 35px;
+  font-family: var(--font1);
+  font-weight: 600;
+  font-style: normal;
+}
+.describeRight.w-small .describeRightLabel{
+  font-size: 25px;
+}
+.describeChatBoxes{
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chatboxes{
+  height: 250px;
+  width: 300px;
+  margin: 20px;
+  background: url('./media/images/green-speech-bubble-icon-isolated_53876-71269 Background Removed.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+  padding: 20px 20px 60px 20px;
+
+}
+.describeRight.w-small .chatboxes{
+  height: 200px;
+  width: 250px;
+  margin: 10px;
+}
+
+.chatboxcontent{
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  color: whitesmoke;
+  font-family: var(--font1);
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.describeRight.w-small .chatboxcontent{
+  font-size: 13px;
+}
+.chatboxcontent span{
+  width: 80%;
+  height: max-content;
+  text-align: justify;
+}
+.indexRoundDiv{
+  height: auto;width: auto;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50% ,0);
+  padding: 5px;
+}
+.indexRound{
+  height: auto;
+  width: auto;
+  border: 0.1px solid white;
+  padding: 6px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+.indexRound.currentPage{
+  background-color: white;
+} 
