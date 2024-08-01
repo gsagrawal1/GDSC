@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GDSC/static/css/main.d0980284.css",
-    "main.js": "/GDSC/static/js/main.c54e3562.js",
+    "main.js": "/GDSC/static/js/main.02b3b3ea.js",
     "static/media/Untitled design.png": "/GDSC/static/media/Untitled design.d996520ea205d199f164.png",
     "static/media/wp11657064.jpg": "/GDSC/static/media/wp11657064.4aab3601138891962844.jpg",
     "static/media/wp9109396.jpg": "/GDSC/static/media/wp9109396.d9578c9980ceb9ad8e5c.jpg",
@@ -12,10 +12,10 @@
     "static/media/wp12835634-coder-4k-wallpapers.png": "/GDSC/static/media/wp12835634-coder-4k-wallpapers.3617c620b0e8f8d670f3.png",
     "index.html": "/GDSC/index.html",
     "main.d0980284.css.map": "/GDSC/static/css/main.d0980284.css.map",
-    "main.c54e3562.js.map": "/GDSC/static/js/main.c54e3562.js.map"
+    "main.02b3b3ea.js.map": "/GDSC/static/js/main.02b3b3ea.js.map"
   },
   "entrypoints": [
     "static/css/main.d0980284.css",
-    "static/js/main.c54e3562.js"
+    "static/js/main.02b3b3ea.js"
   ]
 }
