@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Route, Routes, HashRouter } from 'react-router-dom';
+import { Route, Routes, HashRouter,  } from 'react-router-dom';
 import { DataProvider } from './Context/DataContext';
 import Home from './Home';
 import Navbar from './Navbar';
@@ -12,10 +12,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 function App() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-
-  useEffect(() => {
-    navigate('/');
-  }, [navigate]);
 
   useEffect(() => {
     window.scrollTo(0, 0);

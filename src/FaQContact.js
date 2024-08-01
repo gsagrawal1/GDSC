@@ -58,7 +58,6 @@ const FaQContact = () => {
     useEffect(()=>{
         faqItems.forEach((item)=>{
             const iconDiv = downIconRef.current[item.id];
-        console.log(iconDiv)
         if(iconDiv){
             if(item.isSelect){
                 iconDiv.classList.add("active");
