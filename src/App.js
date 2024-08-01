@@ -13,7 +13,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  
+  useEffect(()=>{
+    navigate('/');
+  },[navigate])
   useEffect(() => {
       window.scrollTo(0, 0);
   }, [pathname]);
