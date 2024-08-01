@@ -11,19 +11,19 @@ const Apply = () => {
     const handlebtnclickNext = (event) =>{
         window.scrollTo({ top: 0, behavior: 'smooth' });
         event.preventDefault();
-      if(count == 0){
+      if(count === 0){
         setCount(1);
       }
-      else if(count == 1){
+      else if(count === 1){
         setCount(2);
       }
     }
     const handlebtnclickBack = () =>{
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        if(count == 1){
+        if(count === 1){
           setCount(0);
         }
-        else if(count == 2){
+        else if(count === 2){
           setCount(1);
         }
       }
