@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Route, Routes} from "react-router-dom";
+import {DataProvider} from "./Context/DataContext";
+import Home from "./Home";
+import Navbar from "./Navbar";
+import OurInfo from './OurInfo';
+import Footer from "./Footer";
+import LastFooter from "./LastFooter";
+import Apply from "./Apply";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+ 
 function App() {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  useEffect(()=>{
+    navigate('/');
+  },[])
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DataProvider>
+      <Navbar />
+      <Routes>
+      <Route path="/" Component={Home}></Route>
+      <Route path="/apply" Component={Apply}></Route>
+       </Routes>
+       <OurInfo />
+      <Footer />
+      <LastFooter />
+
+      </DataProvider>
+     
+
     </div>
   );
 }
