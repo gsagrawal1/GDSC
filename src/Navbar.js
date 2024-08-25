@@ -30,7 +30,7 @@ const Navbar = () => {
        
        {width>992 && list && list.length > 0 ? (
         list.map((item) => (
-            <Link to={item.link} key={item.id} style={{textDecoration: 'none', color: 'inherit'}}>
+            <Link className='navLinks' to={item.link} key={item.id} style={{textDecoration: 'none', color: 'inherit'}}>
             <div className="navitems" 
             key={item.id}
             onClick={() => handleNavSelect(item.id)}

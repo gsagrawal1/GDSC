@@ -133,11 +133,12 @@ body {
   transition: 0.1s ease all;
   padding: 4px;
 }
-.navitems:not(:first-child) span:hover{
+.navLinks span:hover {
   color: whitesmoke;
   transform: scale(1.01);
   border-bottom: 2px solid white;
 }
+
 
 .navbuttons{
   height: 100%;
